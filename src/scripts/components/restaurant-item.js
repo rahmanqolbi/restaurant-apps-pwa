@@ -15,7 +15,7 @@ class RestaurantItem extends HTMLElement {
     <div class="restaurant-item" id="${this._restaurant.id}">
       <a href="#/detail/${this._restaurant.id}">
         <div class="item-thumbnail">
-          <img class="lazyload" src="${CONFIG.BASE_IMAGE_URL('small')}${this._restaurant.pictureId}" alt="${this._restaurant.name || ''}">
+          <img class="lazyload" data-src="${CONFIG.BASE_IMAGE_URL('small')}${this._restaurant.pictureId}" alt="${this._restaurant.name || ''}">
           <p class="city-tag">${this._restaurant.city}</p>
           <p class="rating-tag">
             <i class="fa-solid fa-star"></i>
